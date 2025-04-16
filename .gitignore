@@ -1,0 +1,37 @@
+cat > .gitignore <<EOF
+# Node.js / Cypress (frontend)
+node_modules/
+cypress/reports/
+cypress/videos/
+cypress/screenshots/
+allure-results/
+allure-report/
+dist/
+.env
+.DS_Store
+
+# Java / Maven (backend)
+target/
+*.log
+*.class
+*.iml
+.idea/
+out/
+
+# IntelliJ & VSCode configs
+.vscode/
+*.iws
+*.ipr
+*.bak
+
+# Sistema operacional
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# MacOS
+.DS_Store
+
+# Windows
+*.lnk
+EOF
