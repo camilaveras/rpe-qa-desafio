@@ -1,18 +1,18 @@
 package br.com.rpe.data;
 
-import br.com.rpe.dto.UserDTO;
+import br.com.rpe.dto.User;
 
 public class UserFactory {
 
-    public static UserDTO validUser() {
-        return new UserDTO("Camila", "QA Engineer");
+    public static User validUser() {
+        return new User("Camila", "QA Backend");
     }
 
-    public static UserDTO updatedUser() {
-        return new UserDTO("Camila Atualizada", "QA Sênior");
+    public static User fullUpdate() {
+        return new User("Camila Atualizada", "Senior QA");
     }
 
-    public static UserDTO partialUpdate() {
-        return new UserDTO(null, "QA Líder");
+    public static User partialUpdate() {
+        return new User(null, "Especialista em Testes");
     }
 }

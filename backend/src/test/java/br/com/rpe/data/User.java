@@ -1,12 +1,12 @@
 package br.com.rpe.dto;
 
-public class UserDTO {
+public class User {
     private String name;
     private String job;
 
-    public UserDTO() {}
+    public User() {}
 
-    public UserDTO(String name, String job) {
+    public User(String name, String job) {
         this.name = name;
         this.job = job;
     }
@@ -25,10 +25,5 @@ public class UserDTO {
 
     public void setJob(String job) {
         this.job = job;
-    }
-
-    @Override
-    public String toString() {
-        return "UserDTO{name='" + name + "', job='" + job + "'}";
     }
 }
