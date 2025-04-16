@@ -1,6 +1,7 @@
 # Testes Automatizados - Backend (API ReqRes)
 
-Este projeto contém testes automatizados da API pública [ReqRes](https://reqres.in) utilizando **Java**, **RestAssured**, **JUnit 5** e **Cucumber**.
+Este projeto contém testes automatizados da API pública [ReqRes](https://reqres.in) utilizando **Java**, **RestAssured
+**, **JUnit 5** e **Cucumber**.
 
 ---
 
@@ -19,6 +20,7 @@ Clone o repositório e entre na pasta `backend`:
     cd rpe-qa-desafio/backend
 
 ```
+
 📚 Dependências
 As principais bibliotecas utilizadas estão no pom.xml:
 
@@ -88,6 +90,7 @@ As principais bibliotecas utilizadas estão no pom.xml:
 ```
 
 ▶️ Como rodar os testes
+
 1. Acesse a pasta backend:
     ```bash
        cd backend
@@ -101,17 +104,18 @@ As principais bibliotecas utilizadas estão no pom.xml:
 
 📈 Como visualizar o relatório
 📄 Relatório HTML do Cucumber
-Após a execução dos testes, abra o arquivo:  
-
+Após a execução dos testes, abra o arquivo:
 
    ```bash
         target/cucumber-report.html
    ```
+
 📊 Relatório Allure (opcional)
 Se quiser gerar um relatório mais completo com o Allure:
 
    ```bash
         mvn allure:report
    ```
+
 O relatório será gerado em target/site/allure-maven-plugin/index.html.
 

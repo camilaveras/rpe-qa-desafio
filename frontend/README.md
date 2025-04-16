@@ -1,14 +1,15 @@
 # Desafio Técnico - QA Frontend | RPE Tech
 
-Este repositório contém a automação de testes end-to-end do desafio técnico de QA Frontend da RPE, utilizando Cypress + Faker + Mochawesome para geração de relatórios.
+Este repositório contém a automação de testes end-to-end do desafio técnico de QA Frontend da RPE, utilizando Cypress +
+Faker + Mochawesome para geração de relatórios.
 
 ## ✅ Escopo Atendido
 
 - Elaboração do plano de testes com foco nos fluxos principais
 - Levantamento e automação dos seguintes fluxos:
-  - Login
-  - Cadastro de cliente (com saldo e sem saldo)
-  - Transação (com sucesso e com bloqueio por saldo insuficiente)
+    - Login
+    - Cadastro de cliente (com saldo e sem saldo)
+    - Transação (com sucesso e com bloqueio por saldo insuficiente)
 - Identificação de comportamento inesperado (detalhado abaixo)
 - Relatório visual dos testes via Mochawesome
 
@@ -19,12 +20,12 @@ Este repositório contém a automação de testes end-to-end do desafio técnico
 ### Funcionalidades testadas:
 
 | Funcionalidade      | Cenário                                  | Status |
-| ------------------- | ---------------------------------------- | ------ |
-| Login               | Login válido com credenciais admin/admin | ✅     |
-| Cadastro de cliente | Cliente com saldo positivo               | ✅     |
-| Cadastro de cliente | Cliente com saldo zero                   | ✅     |
-| Transação           | Cliente com saldo suficiente             | ✅     |
-| Transação           | Cliente com saldo insuficiente           | ✅     |
+|---------------------|------------------------------------------|--------|
+| Login               | Login válido com credenciais admin/admin | ✅      |
+| Cadastro de cliente | Cliente com saldo positivo               | ✅      |
+| Cadastro de cliente | Cliente com saldo zero                   | ✅      |
+| Transação           | Cliente com saldo suficiente             | ✅      |
+| Transação           | Cliente com saldo insuficiente           | ✅      |
 
 ---
 
@@ -42,22 +43,22 @@ Este repositório contém a automação de testes end-to-end do desafio técnico
 
 1. **Clientes com saldo maior que R$ 1.000 estão com erro**
 
-   - Ao cadastrar clientes com saldo acima de R$ 1.000, o sistema apresenta comportamento inesperado.
+    - Ao cadastrar clientes com saldo acima de R$ 1.000, o sistema apresenta comportamento inesperado.
 
 2. **Cliente com saldo zerado mostra campo de "validade do cartão"**
 
-   - Esse campo não deveria aparecer, pois não é relevante para a tela de cadastro ou transação.
+    - Esse campo não deveria aparecer, pois não é relevante para a tela de cadastro ou transação.
 
 3. **Transação com cliente sem saldo não exibe mensagem de erro**
 
-   - O botão é clicado, mas nenhuma resposta ou feedback é mostrado ao usuário, mesmo após aguardar 3 minutos.
+    - O botão é clicado, mas nenhuma resposta ou feedback é mostrado ao usuário, mesmo após aguardar 3 minutos.
 
 4. **Não há validação de CPF**
 
-   - É possível cadastrar CPFs inválidos como `000.000.000-00`.
+    - É possível cadastrar CPFs inválidos como `000.000.000-00`.
 
 5. **Botão "Listar Transações" não apresenta nenhuma ação**
-   - O botão está presente mas não gera nenhuma resposta ou listagem.
+    - O botão está presente mas não gera nenhuma resposta ou listagem.
 
 ## 🐞 Sugestões de melhoria:
 
@@ -70,7 +71,8 @@ Este repositório contém a automação de testes end-to-end do desafio técnico
 
 ## 📁 Estrutura do Projeto
 
-frontend/ ├── cypress/ │ ├── e2e/ │ │ ├── login.cy.js │ │ ├── cadastro.cy.js │ │ └── transacao.cy.js │ ├── support/ │ │ ├── commands.js │ │ └── e2e.js │ └── fixtures/ │ └── usuario.json ├── cypress.config.js ├── package.json └── README.md
+frontend/ ├── cypress/ │ ├── e2e/ │ │ ├── login.cy.js │ │ ├── cadastro.cy.js │ │ └── transacao.cy.js │ ├── support/ │ │
+├── commands.js │ │ └── e2e.js │ └── fixtures/ │ └── usuario.json ├── cypress.config.js ├── package.json └── README.md
 
 ---
 

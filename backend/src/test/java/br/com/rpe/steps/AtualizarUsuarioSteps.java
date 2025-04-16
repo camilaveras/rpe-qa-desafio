@@ -16,7 +16,7 @@ public class AtualizarUsuarioSteps {
 
     @Dado("que desejo atualizar um usuario")
     public void desejoAtualizarUsuario() {
-        // Preparação opcional
+
     }
 
     @Quando("eu envio uma requisicao PUT para {string}")

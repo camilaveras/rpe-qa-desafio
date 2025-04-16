@@ -4,7 +4,8 @@ public class UserDTO {
     private String name;
     private String job;
 
-    public UserDTO() {}
+    public UserDTO() {
+    }
 
     public UserDTO(String name, String job) {
         this.name = name;
